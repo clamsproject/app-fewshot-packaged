@@ -11,7 +11,6 @@ import json
 import cv2
 import torch
 import faiss
-import build_index
 from transformers import CLIPProcessor, CLIPModel
 
 
