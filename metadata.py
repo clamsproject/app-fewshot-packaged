@@ -23,11 +23,11 @@ def appmetadata() -> AppMetadata:
     
     # first set up some basic information
     metadata = AppMetadata(
-        name="Few Shot Classification",
-        description="This tool uses a vision model to classify video segments by comparing them to examples",
+        name="Few Shot Packaged",
+        description="This tool uses a vision model to classify video segments by comparing them to examples included in the tool.",
         app_license="MIT",
-        identifier="few_shot",
-        url="https://github.com/clamsproject/app-fewshotclassifier",
+        identifier="few_shot_packaged",
+        url="https://github.com/clamsproject/app-fewshot-packaged",
     )
     metadata.add_input(DocumentTypes.VideoDocument, required=True)
     metadata.add_output(AnnotationTypes.TimeFrame, frameType='string')
