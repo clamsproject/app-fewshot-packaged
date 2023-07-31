@@ -18,8 +18,8 @@ class Clip(ClamsApp):
 
     def __init__(self):
         super().__init__()
-        index_filepath = "index_0.faiss"
-        index_map_filepath = "index_0.json"
+        index_filepath = "chyron_full.faiss"
+        index_map_filepath = "chyron_full.json"
         # load the index
         self.index = faiss.read_index(index_filepath)
         self.index_map = json.load(open(index_map_filepath, "r"))
